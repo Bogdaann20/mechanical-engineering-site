@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MechIT - Mechanical Engineering in the Digital Era</title>
+  <meta name="description" content="Discover the intersection between mechanical engineering and information technology. Robotics, CAD/CAM, digital simulations, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="gear-icon">⚙</span>
+      <span>Mech<span class="accent">IT</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#domains">Domains</a></li>
+      <li><a href="#lab">Lab</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <img src="hero.png" alt="Mechanical engineering and IT" class="hero-bg" />
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="hero-tag">The future is hybrid</p>
+        <h1 class="hero-title">Mechanical Engineering<br /><span class="accent-text">in the Digital Era</span></h1>
+        <p class="hero-subtitle">Where mechanical precision meets computing power. CAD, simulation, robotics, industrial AI, and digital twins integrated into one learning ecosystem.</p>
+        <div class="hero-cta">
+          <a href="#domains" class="btn-primary">Explore the domains</a>
+          <a href="#lab" class="btn-secondary">Enter the lab</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" data-target="94">0</span><span>%</span><p>Digital Manufacturing</p></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="4200">0</span><span>+</span><p>Software Tools</p></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" data-target="2050">0</span><span></span><p>Future Industry</p></div>
+        </div>
+      </div>
+
+      <aside class="hero-panel reveal">
+        <div class="hero-panel-head">
+          <span class="status-dot"></span>
+          <span>Live system snapshot</span>
+        </div>
+        <div class="hero-panel-grid">
+          <article class="hero-metric">
+            <p>Robotic cell uptime</p>
+            <strong>99.2%</strong>
+            <span>based on predictive analysis</span>
+          </article>
+          <article class="hero-metric">
+            <p>Simulation time reduced</p>
+            <strong>34h</strong>
+            <span>through virtual validation</span>
+          </article>
+          <article class="hero-metric hero-metric-wide">
+            <p>Active digital flow</p>
+            <div class="signal-bars" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <span>CAD → FEM → PLC → Cloud → Twin</span>
+          </article>
+        </div>
+        <div class="hero-panel-footer">
+          <div>
+            <small>Focus</small>
+            <strong>Design + Data + Automation</strong>
+          </div>
+          <a href="#case-study">See real case</a>
+        </div>
+      </aside>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-tag">What is MechIT?</div>
+      <h2 class="section-title">Mechanical Engineering <span class="accent">redefined</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Modern mechanical engineering is no longer just about gears and machines. Today, a mechanical engineer works with advanced simulation software, artificial intelligence algorithms, digital twins, and cyber-physical systems that completely transform how products are designed, tested, and manufactured.</p>
+          <p>From rapid prototyping through 3D printing to fully robotic assembly lines controlled by IoT systems, <strong>the boundary between mechanical and digital has disappeared</strong>.</p>
+          <a href="#domains" class="btn-outline">Discover more</a>
+        </div>
+        <div class="about-cards">
+          <div class="mini-card"><div class="mini-icon">🔩</div><h4>Design</h4><p>Parametric CAD & FEA</p></div>
+          <div class="mini-card"><div class="mini-icon">🤖</div><h4>Automation</h4><p>Robotics & PLC</p></div>
+          <div class="mini-card"><div class="mini-icon">💻</div><h4>Simulation</h4><p>Digital CFD & FEM</p></div>
+          <div class="mini-card"><div class="mini-icon">🌐</div><h4>Connectivity</h4><p>Industrial IoT & Cloud</p></div>
+        </div>
+      </div>
+      <div class="about-strip reveal">
+        <div class="strip-item">
+          <span>01</span>
+          <p>CAD model connected to parametric rules and versioning.</p>
+        </div>
+        <div class="strip-item">
+          <span>02</span>
+          <p>Iterative simulation before the physical prototype.</p>
+        </div>
+        <div class="strip-item">
+          <span>03</span>
+          <p>Field data used for continuous optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="domains" id="domains">
+    <div class="container">
+      <div class="section-tag">Main domains</div>
+      <h2 class="section-title">What you study and <span class="accent">what you build</span></h2>
+      <div class="domains-grid">
+        <div class="domain-card" style="--delay:0s">
+          <div class="domain-icon">🏗️</div>
+          <h3>CAD / CAM</h3>
+          <p>Computer-aided design and digital manufacturing. SolidWorks, CATIA, AutoCAD, Fusion 360 - core tools of modern engineering.</p>
+          <ul>
+            <li>Parametric 3D modeling</li>
+            <li>G-code generation for CNC</li>
+            <li>Tolerances and assemblies</li>
+          </ul>
+          <div class="domain-tag">Design</div>
+        </div>
+
+        <div class="domain-card" style="--delay:.1s">
+          <div class="domain-icon">🌊</div>
+          <h3>CFD & FEM</h3>
+          <p>Fluid dynamics simulation and finite element analysis enable virtual testing before building the physical prototype.</p>
+          <ul>
+            <li>ANSYS, SimScale, OpenFOAM</li>
+            <li>Structural and thermal analysis</li>
+            <li>Shape optimization</li>
+          </ul>
+          <div class="domain-tag">Simulation</div>
+        </div>
+
+        <div class="domain-card" style="--delay:.2s">
+          <div class="domain-icon">🤖</div>
+          <h3>Robotics & Automation</h3>
+          <p>Collaborative robotic systems, industrial arms, and automated production lines controlled through code and smart sensors.</p>
+          <ul>
+            <li>ROS (Robot Operating System)</li>
+            <li>PLC & SCADA</li>
+            <li>Motion and kinematics</li>
+          </ul>
+          <div class="domain-tag">Robotics</div>
+        </div>
+
+        <div class="domain-card" style="--delay:.3s">
+          <div class="domain-icon">🖨️</div>
+          <h3>Additive Manufacturing</h3>
+          <p>3D printing revolutionized prototyping. From PLA filament to laser-sintered metal alloys, the speed from idea to object has dropped dramatically.</p>
+          <ul>
+            <li>FDM, SLA, SLS, DMLS</li>
+            <li>Design for Additive Manufacturing</li>
+            <li>Post-processing and quality control</li>
+          </ul>
+          <div class="domain-tag">Manufacturing</div>
+        </div>
+
+        <div class="domain-card" style="--delay:.4s">
+          <div class="domain-icon">🌐</div>
+          <h3>Industrial IoT (IIoT)</h3>
+          <p>Machines talk to each other. Sensors, cloud gateways, and real-time dashboards turn the factory into a digital organism.</p>
+          <ul>
+            <li>Smart sensors and actuators</li>
+            <li>MQTT, OPC-UA protocols</li>
+            <li>Cloud platforms (AWS IoT, Azure)</li>
+          </ul>
+          <div class="domain-tag">Connectivity</div>
+        </div>
+
+        <div class="domain-card" style="--delay:.5s">
+          <div class="domain-icon">🧠</div>
+          <h3>AI & Digital Twin</h3>
+          <p>The digital twin is a live virtual replica of a physical system. Using AI, it can predict failures, optimize performance, and guide operators.</p>
+          <ul>
+            <li>Predictive machine learning</li>
+            <li>Siemens NX, PTC Creo</li>
+            <li>Edge computing in the factory</li>
+          </ul>
+          <div class="domain-tag">Artificial Intelligence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lab" id="lab">
+    <div class="container">
+      <div class="section-tag">Interactive studio</div>
+      <h2 class="section-title">MechIT <span class="accent">Experience Lab</span></h2>
+      <div class="lab-layout">
+        <div class="lab-panel reveal">
+          <div class="lab-header">
+            <p class="lab-kicker">Digital scenarios</p>
+            <h3>Choose a workflow</h3>
+          </div>
+          <div class="lab-tabs" role="tablist" aria-label="MechIT scenarios">
+            <button class="lab-tab active" data-tab="cad" role="tab" aria-selected="true">CAD Sprint</button>
+            <button class="lab-tab" data-tab="simulation" role="tab" aria-selected="false">Simulation Loop</button>
+            <button class="lab-tab" data-tab="factory" role="tab" aria-selected="false">Factory Sync</button>
+          </div>
+          <div class="lab-content">
+            <article class="lab-pane active" data-pane="cad">
+              <div class="lab-statline">
+                <strong>6 hours</strong>
+                <span>from concept to validated parametric model</span>
+              </div>
+              <p>Workflow for fast component design, with geometric rules, dimensional validation, and automatic export for CAM.</p>
+              <ul class="lab-list">
+                <li>Parametric model and reusable libraries</li>
+                <li>Tolerance control and CAD versioning</li>
+                <li>Direct preparation for CNC or 3D printing</li>
+              </ul>
+            </article>
+            <article class="lab-pane" data-pane="simulation">
+              <div class="lab-statline">
+                <strong>38%</strong>
+                <span>fewer physical iterations during testing</span>
+              </div>
+              <p>Pipeline focused on CFD and FEA simulations, with rapid interpretation of thermal hotspots and maximum stress areas.</p>
+              <ul class="lab-list">
+                <li>Controlled mesh and multi-load scenarios</li>
+                <li>Comparison between design variants</li>
+                <li>Technical report ready for review</li>
+              </ul>
+            </article>
+            <article class="lab-pane" data-pane="factory">
+              <div class="lab-statline">
+                <strong>24/7</strong>
+                <span>visibility over connected lines</span>
+              </div>
+              <p>Architecture for integrating data from sensors, PLCs, and live dashboards that feed an operational digital twin.</p>
+              <ul class="lab-list">
+                <li>MQTT / OPC-UA connection to the edge gateway</li>
+                <li>Predictive alerts for process deviations</li>
+                <li>Unified dashboard for operators and engineers</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <aside class="lab-dashboard reveal">
+          <div class="dashboard-shell">
+            <div class="dashboard-topline">
+              <span class="status-dot"></span>
+              <p>Operational twin</p>
+            </div>
+            <div class="dashboard-chart">
+              <span style="--h:56%"></span>
+              <span style="--h:72%"></span>
+              <span style="--h:48%"></span>
+              <span style="--h:84%"></span>
+              <span style="--h:63%"></span>
+              <span style="--h:91%"></span>
+              <span style="--h:76%"></span>
+            </div>
+            <div class="dashboard-meta">
+              <div>
+                <small>Efficiency</small>
+                <strong>+17.4%</strong>
+              </div>
+              <div>
+                <small>Estimated downtime</small>
+                <strong>-11h / month</strong>
+              </div>
+            </div>
+            <div class="dashboard-log">
+              <p><span>08:42</span> Mesh recalibrated for turbulent flow.</p>
+              <p><span>09:15</span> Robot cell 03 synced with the dashboard.</p>
+              <p><span>10:08</span> Vibration alert solved through predictive tuning.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools" id="tools">
+    <div class="container">
+      <div class="section-tag">Software ecosystem</div>
+      <h2 class="section-title">Essential <span class="accent">technologies</span></h2>
+      <div class="tools-flex">
+        <div class="tool-item" title="SolidWorks"><span>SolidWorks</span></div>
+        <div class="tool-item" title="ANSYS"><span>ANSYS</span></div>
+        <div class="tool-item" title="CATIA"><span>CATIA</span></div>
+        <div class="tool-item" title="Fusion 360"><span>Fusion 360</span></div>
+        <div class="tool-item" title="MATLAB"><span>MATLAB</span></div>
+        <div class="tool-item" title="Python"><span>Python</span></div>
+        <div class="tool-item" title="ROS"><span>ROS</span></div>
+        <div class="tool-item" title="OpenFOAM"><span>OpenFOAM</span></div>
+        <div class="tool-item" title="AutoCAD"><span>AutoCAD</span></div>
+        <div class="tool-item" title="Simulink"><span>Simulink</span></div>
+        <div class="tool-item" title="Arduino/ESP"><span>Arduino</span></div>
+        <div class="tool-item" title="PLC Siemens"><span>Siemens PLC</span></div>
+      </div>
+
+      <div class="code-showcase reveal">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">cfd_simulation.py</span>
+        </div>
+        <pre class="code-block"><code><span class="kw">import</span> numpy <span class="kw">as</span> np
+<span class="kw">import</span> matplotlib.pyplot <span class="kw">as</span> plt
+
+<span class="comment"># Simplified laminar flow simulation - NACA profile</span>
+<span class="kw">class</span> <span class="cls">FluidSimulation</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self, reynolds=1000, grid_size=64):
+        self.Re = reynolds
+        self.N  = grid_size
+        self.velocity_field = np.zeros((grid_size, grid_size, 2))
+
+    <span class="kw">def</span> <span class="fn">solve</span>(self, iterations=500):
+        <span class="str">"""Lattice-Boltzmann solver for fast CFD"""</span>
+        <span class="kw">for</span> step <span class="kw">in</span> range(iterations):
+            self._stream()
+            self._collide()
+        <span class="kw">return</span> self.velocity_field
+
+    <span class="kw">def</span> <span class="fn">visualize</span>(self):
+        plt.streamplot(self.velocity_field[..., 0],
+                       self.velocity_field[..., 1],
+                       color=<span class="str">'#FF6B35'</span>, density=1.5)
+        plt.title(<span class="str">'Velocity field - CFD simulation'</span>)
+        plt.show()
+
+sim = <span class="cls">FluidSimulation</span>(reynolds=2000)
+result = sim.solve()
+sim.visualize()</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study" id="case-study">
+    <div class="container">
+      <div class="section-tag">Applied case</div>
+      <h2 class="section-title">From concept to <span class="accent">intelligent line</span></h2>
+      <div class="case-grid">
+        <div class="case-card reveal">
+          <h3>Robotic cell for precision assembly</h3>
+          <p>A typical MechIT scenario combines design, simulation, and software integration into a system that can be monitored and optimized in real time.</p>
+          <div class="case-points">
+            <div><span>12 weeks</span><p>full implementation time</p></div>
+            <div><span>31%</span><p>productivity increase after digitalization</p></div>
+            <div><span>3 systems</span><p>CAD, PLC, and cloud connected in one flow</p></div>
+          </div>
+        </div>
+        <div class="case-timeline reveal">
+          <article>
+            <span>Phase 1</span>
+            <h4>Architecture</h4>
+            <p>Mechanical definition, operational layout, and sensor mapping.</p>
+          </article>
+          <article>
+            <span>Phase 2</span>
+            <h4>Validation</h4>
+            <p>Load, vibration, and motion sequence simulations.</p>
+          </article>
+          <article>
+            <span>Phase 3</span>
+            <h4>Integration</h4>
+            <p>PLC connection, dashboard, and predictive maintenance alerts.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roadmap" id="roadmap">
+    <div class="container">
+      <div class="section-tag">Recommended path</div>
+      <h2 class="section-title">Roadmap for <span class="accent">a complete profile</span></h2>
+      <div class="roadmap-grid">
+        <article class="roadmap-step reveal">
+          <span class="step-badge">01</span>
+          <h3>Fundamentals</h3>
+          <p>Mechanics, materials, strength of materials, and technical drawing.</p>
+        </article>
+        <article class="roadmap-step reveal">
+          <span class="step-badge">02</span>
+          <h3>Digital Core</h3>
+          <p>CAD, technical scripting, data analysis, and an introduction to automation.</p>
+        </article>
+        <article class="roadmap-step reveal">
+          <span class="step-badge">03</span>
+          <h3>Simulation</h3>
+          <p>FEM, CFD, and result interpretation for design optimization.</p>
+        </article>
+        <article class="roadmap-step reveal">
+          <span class="step-badge">04</span>
+          <h3>Industrial Integration</h3>
+          <p>PLC, sensors, industrial networks, and process data collection.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="careers" id="careers">
+    <div class="container">
+      <div class="section-tag">Opportunities</div>
+      <h2 class="section-title">Careers in <span class="accent">MechIT</span></h2>
+      <div class="careers-grid">
+        <div class="career-card">
+          <div class="career-num">01</div>
+          <h3>CAD/CAM Engineer</h3>
+          <p>You design complex 3D components and programs for CNC machines. You work in aerospace, automotive, and industrial production.</p>
+          <div class="career-salary">5,000 - 12,000 RON/month</div>
+        </div>
+        <div class="career-card">
+          <div class="career-num">02</div>
+          <h3>CFD/FEA Specialist</h3>
+          <p>You simulate the behavior of fluids and structures under load. You replace expensive physical tests with fast virtual validation.</p>
+          <div class="career-salary">7,000 - 15,000 RON/month</div>
+        </div>
+        <div class="career-card">
+          <div class="career-num">03</div>
+          <h3>Robotics Engineer</h3>
+          <p>You program, integrate, and maintain industrial robotic systems. Python, ROS, and PLC are your daily tools.</p>
+          <div class="career-salary">8,000 - 18,000 RON/month</div>
+        </div>
+        <div class="career-card">
+          <div class="career-num">04</div>
+          <h3>Digital Twin Engineer</h3>
+          <p>You create virtual replicas of factories and machines. You combine IoT, simulation, and AI for real-time optimization.</p>
+          <div class="career-salary">10,000 - 22,000 RON/month</div>
+        </div>
+        <div class="career-card">
+          <div class="career-num">05</div>
+          <h3>IIoT Integration Engineer</h3>
+          <p>You connect physical machines to cloud systems. You ensure security, low latency, and full production visibility.</p>
+          <div class="career-salary">9,000 - 20,000 RON/month</div>
+        </div>
+        <div class="career-card">
+          <div class="career-num">06</div>
+          <h3>AM / 3D Printing Specialist</h3>
+          <p>You optimize design for additive manufacturing and manage the full production line through metal or plastic 3D printing.</p>
+          <div class="career-salary">5,500 - 13,000 RON/month</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-tag">Stay connected</div>
+      <h2 class="section-title">Start your <span class="accent">journey</span></h2>
+      <div class="contact-layout">
+        <div class="contact-copy reveal">
+          <p class="contact-sub">Subscribe for resources, tutorials, and updates from the world of digital mechanical engineering. You will get case studies, toolkits, and learning roadmaps.</p>
+          <div class="contact-benefits">
+            <p>Workshops and clean technical articles.</p>
+            <p>Updates about tools and modern workflows.</p>
+            <p>Project ideas for your technical portfolio.</p>
+          </div>
+        </div>
+        <div class="contact-box reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email address" required />
+            </div>
+            <div class="form-group">
+              <select id="interest">
+                <option value="">Area of interest</option>
+                <option>CAD / CAM</option>
+                <option>CFD/FEA Simulation</option>
+                <option>Robotics & Automation</option>
+                <option>Industrial IoT</option>
+                <option>AI & Digital Twin</option>
+                <option>Additive Manufacturing</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-primary btn-full">Subscribe for free</button>
+          </form>
+          <div class="success-msg" id="successMsg">Thank you. You have been added to our list.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="gear-icon">⚙</span>
+        <span>Mech<span class="accent">IT</span></span>
+        <p>Mechanical engineering in the digital era</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#domains">Domains</a>
+        <a href="#lab">Lab</a>
+        <a href="#roadmap">Roadmap</a>
+      </div>
+      <p class="footer-copy">© 2026 MechIT · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
